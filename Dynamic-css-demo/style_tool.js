@@ -7,15 +7,26 @@
  *      'green': 'greenStyleByJolie'
  *    }
  * 
- * 2. use the noStyle()  and applyStyle() function in a tag, or any way. The applyStyle(styleName) function
+ * 2. use the noSpecialStyle()  and applyStyle() function in a tag, or any way. The applyStyle(styleName) function
  *    need a params 'styleName', which is the key of the 'styleMap'
+ *    
+ * Note: You can link a style which filename is start width 'basic-' to apply all the time. the noSpecialStyle() will
+ * not remove a style file which filename is start width 'basic-'
  */
 
-function noStyle() {
-  var styles = document.getElementsByTagName('link');
-  for (var i = styles.length - 1; i >= 0; i--) {
-    var style = styles[i];
-    style.parentNode.removeChild(style);
+/**
+ * remove all special style file. When a style file's filename is 
+ * start width 'basic-', that's not a special style file.
+ */
+function noSpecialStyle() {
+  var styles = Array.from(document.getElementsByTagName('link'));
+  var specialStyles = styles.filter(function (styleElement) {
+    return styleElement.href.match(/(basic-[^\/]+)(?=\.\w+$)/) == null;
+  });
+  
+  for (var i = specialStyles.length - 1; i >= 0; i--) {
+    var specialStyles = specialStyles[i];
+    specialStyles.parentNode.removeChild(specialStyles);
   }
   console.log('Have removed all styles.');
 }
