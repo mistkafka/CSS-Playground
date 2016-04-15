@@ -1,0 +1,45 @@
+/* Basic Style */
+* {padding: 0; margin: 0;}
+main {width: 66.66%; margin: 0 auto;}
+
+/* Links */
+#basic {}
+
+#better1 {
+    display: inline-block;
+    padding: 7px 11px;
+    align-content: center;
+    text-decoration: none;
+}
+
+#better1:visited, #better1:link {
+    color: #0d8ba1;
+}
+
+#better2 {
+    display: inline-block;
+    padding: 7px 11px;
+    align-content: center;
+    text-decoration: none;
+}
+
+#better2:visited, #better2:link {
+    color: #0d8ba1;
+}
+#better2:hover, #better2:active{
+    color: #0d8bee;
+}
+
+#button {
+    display: inline-block;
+    padding: 11px 17px;
+    align-content: center;
+    text-decoration: none;
+    background-color: #4CAF50;
+    color: white;
+    border-radius: 2px;
+    font-family: Monaco;
+}
+#button:hover {
+    background-color: green;
+}

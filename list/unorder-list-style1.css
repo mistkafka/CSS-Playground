@@ -1,0 +1,32 @@
+/* Basic Style */
+* {padding: 0; margin: 0;}
+main {width: 66.66%; margin: 0 auto;}
+
+/* Unordered List Style */
+ul.ul-square {
+    list-style-type: square;
+}
+ul.ul-circle {
+    list-style-type: circle;
+}
+ul.ul-disc {
+    list-style-type: disc;
+}
+
+/* Embed List */
+ul.ul-level1,
+ul.ul-level2,
+ul.ul-level3 {
+    list-style-position: inside;
+}
+ul.ul-level1 {
+    list-style-type: disc;
+}
+ul.ul-level2 {
+    list-style-type: circle;
+    text-indent: 2em;
+}
+ul.ul-level3 {
+    list-style-type: square;
+    text-indent: 4em;
+}

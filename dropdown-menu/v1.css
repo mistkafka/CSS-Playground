@@ -1,0 +1,19 @@
+.dropdown-menu {
+    display: inline-block; /* 菜单不会占用整整一行, 导致空白区也会出发菜单*/
+    position: relative; /*与子元素.dropdown-content的absolute配合,可以去除盒式模型引发的两元素的空隙,想看区别把两行注释掉试试.*/
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    /*width: 100%;*/
+    min-width: 160px; /*美观,撑开宽度*/
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); /*美观,阴影*/
+    padding: 12px 16px; /*美观,不会那么紧凑*/
+}
+
+
+.dropdown-menu:hover .dropdown-content {
+    display: block;
+}

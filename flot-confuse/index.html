@@ -1,0 +1,24 @@
+<!--
+clear: left/right/both; 用来操作float周围元素的行为, 一般是与float元素同级的
+overflow: auto;  一般用于不让float元素后续的同级元素定上来,被float元素覆盖.所以, 定义一个div来包裹float元素,定义
+                 overflow: auto; 防止元素益处.
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Float Confuse</title>
+    <link href="style1.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<main>
+    <div id="float-wrap">
+        <div id="left" class="box-div">Left</div>
+        <div id="right" class="box-div">Right</div>
+    </div>
+    <div id="normal" class="box-div">This is a normal div</div>
+    <div id="normal2" class="box-div">This is a normal div</div>
+</main>
+</body>
+</html>

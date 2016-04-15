@@ -1,0 +1,44 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.dropdown-menu {
+    display: inline-block;
+    position: relative; // 作为父容器使用,最好不要有padding等属性,这样子容器很难跟它对其定位.详见对比:把brwopdown-btn的样式归回到这里,对比下.
+
+    /*一下注释部分 移到.dropdown-btn,这样下啦菜单的对其问题 就不会有.*/
+    /*cursor: pointer;*/
+    /*background-color: #4CAF50;*/
+    /*color: white;*/
+    /*font-size: 16px;*/
+    /*border: none;*/
+    /*padding: 12px 16px;*/
+}
+.dropdown-btn {
+    cursor: pointer;
+    background-color: #4CAF50;
+    color: white;
+    font-size: 16px;
+    border: none;
+    padding: 12px 16px;
+}
+.dropdown-content {
+    width: 100%;
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+.dropdown-menu:hover .dropdown-content {
+    display: block;
+}
+.dropdown-item{
+    width: 100%;
+    padding: 12px 16px;
+    background-color: #f9f9f9;
+    color: #000;
+}
+.dropdown-item:hover {
+    background-color: #f1f1f1;
+}

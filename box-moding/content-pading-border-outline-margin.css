@@ -1,0 +1,40 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+/*ex1. the div's content as the content.*/
+/*#outside-div {*/
+/*}*/
+/*#inside-div {*/
+    /*line-height: 60px;*/
+
+    /*padding: 10px;*/
+
+    /*border: 7px solid green;*/
+
+    /*outline: 6px solid red; !*the box area is not include outline*!*/
+
+    /*outline-offset: 20px;*/
+
+    /*margin: 3px; !*the Margin is from the Border's out side*!*/
+
+    /*background: lightblue; !*background is control the Content and the Padding part*!*/
+/*}*/
+
+/*ex2. the inside div as the outside div's content*/
+#outside-div {
+    padding: 10px;
+    border: 1px dashed blue;
+    margin: 30px;
+    background-color: cornsilk;
+}
+
+/* the inside div's area is include margin, and that's the outside div's content*/
+#inside-div {
+    padding: 10px;
+    border: 1px solid green;
+    outline: 3px solid red;
+    outline-offset: 30px;
+    margin: 10px;
+}

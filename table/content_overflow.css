@@ -1,0 +1,27 @@
+/* Basic Style */
+* {padding: 0; margin: 0;}
+main {width: 66.66%;margin: 0 auto; }
+
+/* Special Style */
+#overflow-warp {
+    width: 10%;
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+td, th {
+    padding: 7px 11px 2px 11px;
+    height: 31px;
+    text-align: left;
+}
+tr:nth-child(odd) {
+    background-color: #f2f2f2;
+}
+th {
+    color: white;
+    background-color: #4CAF50;
+}

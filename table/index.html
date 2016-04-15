@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS Table Show</title>
+</head>
+<body>
+<main>
+    <div id="overflow-warp">
+        <table>
+            <caption>Human Resource Table</caption>
+            <tr>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>Age</th>
+                <th>Sex</th>
+            </tr>
+            <tr>
+                <td>Zhenguo</td>
+                <td>Lin</td>
+                <td>23</td>
+                <td>M</td>
+            </tr>
+            <tr>
+                <td>Jolie</td>
+                <td>Yang</td>
+                <td>17</td>
+                <td>F</td>
+            </tr>
+            <tr>
+                <td>Tomas</td>
+                <td>Porty</td>
+                <td>37</td>
+                <td>M</td>
+            </tr>
+            <tr>
+                <td>Zijuan</td>
+                <td>X</td>
+                <td>23</td>
+                <td>F</td>
+            </tr>
+        </table>
+    </div>
+
+    <nav>
+        <h3>Choose A Style</h3>
+        <ul>
+            <li><a onclick="noStyle()">No Style</a></li>
+            <li><a onclick="applyStyle('basic')">Basic Table</a></li>
+            <li><a onclick="applyStyle('better')">Better Table</a></li>
+            <li><a onclick="applyStyle('single_border')">Single Border Table</a></li>
+            <li><a onclick="applyStyle('single_plus')">Single Border Table(+)</a></li>
+            <li><a onclick="applyStyle('striped')">Striped Table</a></li>
+            <li><a onclick="applyStyle('content_overflow')">Overflow Border Table</a></li>
+        </ul>
+    </nav>
+</main>
+</body>
+<script>
+    var styleMap = {
+        'basic': 'basic',
+        'better': 'better',
+        'single_border': 'single_border',
+        'single_plus': 'single_border_plus',
+        'striped': 'striped_border',
+        'content_overflow': 'content_overflow'
+    }
+</script>
+<script src="style_tool.js"></script>
+</html>

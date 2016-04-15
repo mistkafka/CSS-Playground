@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Dynamic</title>
+    <link id="style1" href="style1.css" rel="stylesheet" type="text/css" />
+    <link id="style2" href="style2.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+
+<div id="test">
+</div>
+
+<ul>
+    <li><a onclick="noStyle()">No Style</a></li>
+    <li><a onclick="applyStyle('1')">Style 1</a></li>
+    <li><a onclick="applyStyle('2')">Style 2</a></li>
+</ul>
+
+</body>
+<script>
+    var styleMap = {
+        '1': 'style1',
+        '2': 'style2'
+    }
+</script>
+<script src="site_tool.js"></script>
+</html>

@@ -1,0 +1,26 @@
+/* Basic Style */
+* {padding: 0; margin: 0;}
+main { width: 66.66%; margin: 0 auto;}
+
+
+.box-div {
+    width: 33.12%;
+    height: 200px;
+    border: 1px solid black;
+}
+#left {
+    float: left;
+    background-color: #0d8ba1;
+}
+#right {
+    float: right;
+    background-color: bisque;
+}
+#normal {
+    width: 100%;
+    background-color: cyan;
+    /*clear: both;*/
+}
+#float-wrap {
+    overflow: auto;
+}

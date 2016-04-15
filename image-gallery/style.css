@@ -1,0 +1,25 @@
+/* Basic Style */
+* {padding: 0; margin: 0;}
+main {width: 66.66%; margin: 0 auto}
+
+/* Image Gallery */
+figure img {
+    width: 233px;
+    height: 233px;
+}
+figure {
+    /*float: left;*/
+    vertical-align: top;
+    display: inline-block;  /*会出问题, 需要设置vertical-align: top*/
+    margin: 11px 17px;
+    width: 233px;
+    border: 1px solid #ccc;
+}
+figure:hover {
+    border: 1px solid black;
+}
+.desc {
+    padding: 11px 17px;
+    height: 4em;
+    /*width: 100%;*/ /*width 默认是定义元素的content部分的宽度, desc有padding, width:100% 总宽度就会超过父元素*/
+}

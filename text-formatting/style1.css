@@ -1,0 +1,29 @@
+/* Basic Style */
+* {padding: 0; margin: 0;}
+
+/* Text Formatting */
+
+article {
+    width: 66.66%;
+    margin: 0 auto;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: deepskyblue;
+    margin-top: 13px;
+    margin-bottom: 5px;
+    text-transform: uppercase;
+    word-spacing: 0.5em;
+}
+
+p {
+    margin-bottom: 0.5em;
+    text-indent: 2em;
+    line-height: 1.7em;
+    font-size: 1.1em;
+}
+p::first-letter {
+    color: crimson;
+    font-size: 18px;
+    text-transform: uppercase;
+}

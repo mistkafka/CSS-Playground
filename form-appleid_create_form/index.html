@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Form -- AppleID Create Form</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+
+<form>
+    <fieldset id="account_info">
+        <div class="intro_group">
+            <p class="intro">One Apple ID is all you need to access all Apple services.</p>
+            <p class="intro">Already have an Apple ID? Find it here</p>
+        </div>
+        <input type="email" name="account" placeholder="name@example.com"/>
+        <input type="password" name="password" placeholder="password" />
+        <input type="password" name="confirm_password" placeholder="confirm password" />
+        <div id="name-warp">
+            <input class="name" id="first_name" type="text" name="first_name" placeholder="first name" />
+            <input class="name" id="second_name" type="text" name="last_name" placeholder="last name" />
+        </div>
+        <input type="date" name="birthday" placeholder="birthday" />
+    </fieldset>
+
+    <fieldset id="security_info">
+        <select>
+            <option selected="selected" disabled="disabled">Security Question 1</option>
+            <option>What's your dream job?</option>
+            <option>What's your favorite nickname?</option>
+        </select>
+        <input type="text" name="answer1" placeholder="answer"/>
+        <select>
+            <option selected="selected" disabled="disabled">Security Question 2</option>
+            <option>What's your dream job?</option>
+            <option>What's your favorite nickname?</option>
+        </select>
+        <input type="text" name="answer2" placeholder="answer"/>
+        <select>
+            <option selected="selected" disabled="disabled">Security Question 3</option>
+            <option>What's your dream job?</option>
+            <option>What's your favorite nickname?</option>
+        </select>
+        <input type="text" name="answer3" placeholder="answer"/>
+        <div class="intro_group">
+            <p class="intro">These questions will be used to verify your identity and recover your password if you ever forget it.</p>
+        </div>
+    </fieldset>
+
+    <fieldset id="area_info">
+        <select>
+            <option>United States</option>
+        </select>
+    </fieldset>
+</form>
+
+</body>
+</html>

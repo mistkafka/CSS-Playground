@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Links</title>
+</head>
+<body>
+<main>
+    <ul>
+        <li><a id="basic" href="">Basic</a></li>
+        <li><a id="better1" href="">Better #1</a></li>
+        <li><a id="better2" href="">Better #2</a></li>
+        <li><a id="button" href="">Button</a></li>
+    </ul>
+</main>
+
+<nav>
+    <h3>Choose A Style</h3>
+    <ul>
+        <li><a onclick="noStyle()">No Style</a></li>
+        <li><a onclick="applyStyle('style')">Style 1</a></li>
+    </ul>
+</nav>
+</body>
+<script>
+    var styleMap = {
+        'style': 'style'
+    }
+</script>
+<script src="style_tool.js"></script>
+</html>

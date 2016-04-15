@@ -1,0 +1,63 @@
+/* Basic Style */
+* {padding: 0; margin: 0;}
+
+/* Top Level: form align, size */
+form {width: 66.66%; margin: 100px auto;}
+
+/* Second Level: about elements' align, unify size */
+input:not(.name), select, .intro_group, #name-warp {
+    width: 50%;
+    margin: 11px auto;
+    display: block;
+    box-sizing: border-box;
+}
+select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+#name-warp {
+    overflow: auto;  /* TODO: #bug first_name's and last_name's input focus outline will be hidden because #name-wrap is overflow:auto */
+}
+#first_name {
+    width: 48.5%;
+    float: left;
+    box-sizing: border-box;
+    z-index: 1;
+}
+#second_name {
+    width: 48.5%;
+    float: right;
+    box-sizing: border-box;
+    z-index: 1;
+}
+
+
+/* Third Level: field group. */
+fieldset {
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 1px solid #ccc;
+    padding: 2em 0;
+    display: block;
+}
+fieldset:last-child {
+    border: none;
+}
+
+/* Forth Level: element's padding, color, font, background, border, active etc. */
+p.intro {
+    text-align: center;
+    color: RGB(102, 102, 102);
+    font-weight: lighter;
+}
+input, select {
+    padding: 7px 11px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    font-weight: lighter;
+}
+select {
+    cursor: pointer;
+}

@@ -1,0 +1,21 @@
+/* Basic Style */
+* {padding: 0; margin: 0;}
+
+/* Ordered List */
+body {
+    counter-reset: header1;
+}
+
+h1 {
+    counter-reset: header2;
+}
+
+h1:before {
+    counter-increment: header1;
+    content: 'Section ' counter(header1) '. ';
+}
+
+h2:before {
+    counter-increment: header2;
+    content: 'Section ' counter(header1) '.' counter(header2) ' ';
+}

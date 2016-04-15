@@ -1,0 +1,16 @@
+/* Basic Style */
+* {padding: 0; margin: 0;}
+
+main {
+    width: 66.66%;
+    margin: 0 auto;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+table, th, td {
+    border: 1px solid black;
+}
+

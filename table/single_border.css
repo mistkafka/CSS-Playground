@@ -1,0 +1,17 @@
+/* Basic Style */
+* {padding: 0; margin: 0;}
+
+main { width: 66.66%; margin: 0 auto;}
+
+table {
+    width: 100%;
+    border-collapse: collapse; /*important! no space between cells*/
+}
+
+th, td {
+    padding: 7px 11px 1px 11px;
+    height: 31px;
+    border-bottom: 1px solid #ddd;
+    text-align: left;
+}
+
