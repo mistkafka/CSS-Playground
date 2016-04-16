@@ -3,25 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <title>Dynamic</title>
-    <link id="style1" href="basic-1.css" rel="stylesheet" type="text/css" />
-    <link id="style2" href="style2.css" rel="stylesheet" type="text/css" />
+    <link id="style1" href="basic-nav.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
-
-<div id="test">
-</div>
-
+<nav>
 <ul>
     <li><a onclick="noSpecialStyle()">Basic Only</a></li>
     <li><a onclick="applyStyle('1')">Style 1</a></li>
     <li><a onclick="applyStyle('2')">Style 2</a></li>
 </ul>
+</nav>
+
+<main>
+
+</main>
+
+
 
 </body>
 <script>
     var styleMap = {
-        '1': 'style1',
-        '2': 'style2'
     }
 </script>
 <script src="style_tool.js"></script>

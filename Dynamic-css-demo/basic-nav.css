@@ -1,0 +1,38 @@
+/* Basic Style */
+* {
+    padding: 0;
+    margin: 0;
+}
+
+nav {
+    display: flex;
+    top: 0;
+    left: 0;
+    background-color: #333;
+}
+nav ul {
+    list-style-type: none;
+}
+nav ul li{
+    float: left;
+    border-right: 1px solid white;
+}
+nav ul li:last-child {
+    border-right: none;
+}
+nav ul li a {
+    display: block;
+    padding: 13px 17px;
+    color: white;
+    cursor: pointer;
+    text-decoration: none;
+    text-align: center;
+}
+nav ul li:hover{
+    background-color: #111111;
+}
+
+main {
+    width: 79.17%;
+    margin: 2em auto;
+}

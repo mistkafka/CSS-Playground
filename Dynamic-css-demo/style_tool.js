@@ -37,6 +37,6 @@ function applyStyle(styleName) {
   newStyle.type = 'text/css';
   newStyle.rel = 'stylesheet';
   
-  noStyle();
+  noSpecialStyle();
   document.getElementsByTagName('head')[0].appendChild(newStyle);
 }
