@@ -1,0 +1,60 @@
+div {
+    width: 66.66%;
+    height: 170px;
+    margin: 17px auto;
+    border: 1px solid #ccc;
+}
+
+/* default: top->bottom*/
+#ex1 {
+    background: red;
+    background: -webkit-linear-gradient(red, yellow);
+    background: -o-linear-gradient(red, yellow);
+    background: -moz-linear-gradient(red, yellow);
+    background: linear-gradient(red, yellow);
+}
+
+/* left->right */
+#ex2 {
+    background: red;
+    background: -webkit-linear-gradient(left, red, yellow);
+    background: -o-linear-gradient(right, red, yellow);
+    background: -moz-linear-gradient(right, red, yellow);
+    background: linear-gradient(to right, red, yellow);
+}
+
+/* diagonal */
+#ex3 {
+    background: red;
+    background: -webkit-linear-gradient(left top, red, yellow);
+    background: -o-linear-gradient(bottom right, red, yellow);
+    background: -moz-linear-gradient(bottom right, red, yellow);
+    background: linear-gradient(to bottom right, red, yellow);
+}
+
+/* using angles */
+#ex4 {
+    background: red;
+    background: -webkit-linear-gradient(10deg, red, yellow);
+    background: -o-linear-gradient(10deg, red, yellow);
+    background: -moz-linear-gradient(10deg, red, yellow);
+    background: linear-gradient(10deg, red, yellow);
+}
+
+/* multiple color */
+#ex5 {
+    background: red;
+    background: -webkit-linear-gradient(red, yellow, green);
+    background: -o-linear-gradient(red, yellow, green);
+    background: -moz-linear-gradient(red, yellow, green);
+    background: linear-gradient(red, yellow, green);
+}
+
+/* multiple color & left->right */
+#ex6 {
+    background: red;
+    background: -webkit-linear-gradient(left, red, orange, yellow, green, blue, indigo, violet);
+    background: -o-linear-gradient(right, red, orange, yellow, green, blue, indigo, violet);
+    background: -moz-linear-gradient(right, red, orange, yellow, green, blue, indigo, violet);
+    background: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet);
+}

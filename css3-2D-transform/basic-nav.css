@@ -37,3 +37,10 @@ main {
     width: 79.17%;
     margin: 5em auto;
 }
+
+div {
+    height: 100px;
+    width: 130px;
+    background-color: #0d8ba1;
+    transition: transform 2s;
+}

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Shadow</title>
+    <link id="style1" href="basic-nav.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<nav>
+<ul>
+    <li><a onclick="noSpecialStyle()">Basic Only</a></li>
+    <li><a onclick="applyStyle('style1')">Style 1</a></li>
+</ul>
+</nav>
+
+<main>
+    <h1 id="ex1">Text Shadow</h1>
+    <h1 id="ex2">Text Shadow - blur effect</h1>
+    <h1 id="ex3">Multiple Shadow Effect</h1>
+    <div class="box-shadow" id="ex4">Box Shadow</div>
+    <div class="box-shadow" id="ex5">Box Shadow - blur effect</div>
+</main>
+
+
+
+</body>
+<script>
+    var styleMap = {
+        'style1': 'style1'
+    }
+</script>
+<script src="style_tool.js"></script>
+</html>

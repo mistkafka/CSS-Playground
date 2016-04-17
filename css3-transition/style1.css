@@ -1,0 +1,17 @@
+#ex1 {
+    width: 100px;
+    height: 100px;
+    background: green;
+    -webkit-transition: height 2s, width 2s, background 5s;
+    -moz-transition: height 2s, width 2s, background 5s;
+    -ms-transition: height 2s, width 2s, background 5s;
+    -o-transition: height 2s, width 2s, background 5s;
+    transition: height 2s, width 2s, background 5s;
+    transition-delay: 1s;
+}
+
+#ex1:hover {
+    width: 200px;
+    height: 200px;
+    background: red;
+}

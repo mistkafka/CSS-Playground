@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS3-Background</title>
+    <link href="basic-1.css" type="text/css" rel="stylesheet" />
+</head>
+<body>
+<nav><ul>
+    <li><a onclick="noSpecialStyle()">Basic Style Only</a></li>
+    <li><a onclick="applyStyle('multiple')">Multiple Images</a></li>
+    <li><a onclick="applyStyle('style2')">background-origin</a></li>
+    <li><a onclick="applyStyle('style3')">background-clip</a></li>
+</ul></nav>
+
+<main>
+    <div id="exp">
+        <h3>CSS3 Background</h3>
+        <p>CSS3 contains a few new background properties, which allow greater control of the background element.In this
+            chapter you will learn how to add multiple background images to one element. You will also learn about the
+            following new CSS3 properties:
+        <ul>
+        <li>background-size: w, h / contain / cover</li>
+        <li>background-origin: border-box/padding-box/content-box</li>
+        <li>background-clip</li>
+        </ul>
+        </p>
+    </div>
+</main>
+
+
+</body>
+<script>
+    var styleMap = {
+        'multiple': 'multiple-images',
+        'style2': 'style2',
+        'style3': 'style3'
+    }
+</script>
+<script src="style_tool.js"></script>
+</html>

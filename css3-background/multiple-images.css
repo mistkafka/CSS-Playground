@@ -1,0 +1,14 @@
+#exp {
+    /*background-image: url('./flower.jpg'), url('./background.jpg');*/
+    /*background-position: right bottom, left top;*/
+    /*background-repeat: no-repeat, repeat;*/
+    /*padding: 15px;*/
+
+
+    /* The first image is on the top */
+    background-image: url("./flower.jpg"), url("./background.jpg");
+    background-position: left top, right bottom;
+    background-repeat: no-repeat, repeat;
+    -webkit-background-size: 20px, 20px;
+    background-size:20px, 20px;
+}

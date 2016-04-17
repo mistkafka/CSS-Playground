@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS3-2d-Transform</title>
+    <link href="basic-nav.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<nav>
+<ul>
+    <li><a onclick="noSpecialStyle()">Basic Only</a></li>
+    <li><a onclick="applyStyle('translate')">Translate</a></li>
+    <li><a onclick="applyStyle('rotate')">Rotate</a></li>
+    <li><a onclick="applyStyle('scale')">Scale</a></li>
+    <li><a onclick="applyStyle('skewX')">SkewX</a></li>
+    <li><a onclick="applyStyle('skewY')">SkewY</a></li>
+    <li><a onclick="applyStyle('matrix')">Matrix</a></li>
+</ul>
+</nav>
+
+<main>
+    <div></div>
+</main>
+
+
+
+</body>
+<script>
+    var styleMap = {
+        'translate': 'translate',
+        'rotate': 'rotate',
+        'scale': 'scale',
+        'skewX': 'skewX',
+        'skewY': 'skewY',
+        'matrix': 'matrix'
+    }
+</script>
+<script src="style_tool.js"></script>
+</html>
