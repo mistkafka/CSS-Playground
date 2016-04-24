@@ -1,0 +1,4 @@
+.flex-item:nth-child(2) {
+    -webkit-order: -1;
+    order: -1;
+}

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Flex Layout</title>
+    <link href="basic-nav.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<nav>
+<ul>
+    <li><a onclick="noSpecialStyle()">Basic Only</a></li>
+    <li><a onclick="applyStyle('direction')">Flex Direction</a></li>
+    <li><a onclick="applyStyle('horizontally')">Horizontally: justify-content</a></li>
+    <li><a onclick="applyStyle('vertically')">Vertically: align-items</a></li>
+    <li><a onclick="applyStyle('wrap')">Flex Item Wrap(like word-wrap)</a></li>
+    <li><a onclick="applyStyle('align-content')">Align-content(like word-break)</a></li>
+    <li><a onclick="applyStyle('order')">Order</a></li>
+    <li><a onclick="applyStyle('margin')">Perfect Center</a></li>
+    <li><a onclick="applyStyle('align-self')">Align-self</a></li>
+    <li><a onclick="applyStyle('flex')">Flex</a></li>
+</ul>
+</nav>
+
+<main>
+    <div class="flex-container">
+        <div class="flex-item">Item 1</div>
+        <div class="flex-item">Item 2</div>
+        <div class="flex-item">Item 3</div>
+    </div>
+</main>
+
+
+
+</body>
+<script>
+    var styleMap = {
+        'direction': 'flex-direction',
+        'horizontally': 'justify-content',
+        'vertically': 'align-items',
+        'wrap': 'flex-wrap',
+        'align-content': 'align-content',
+        'order': 'order',
+        'margin': 'margin',
+        'align-self': 'align-self',
+        'flex': 'flex'
+    }
+</script>
+<script src="style_tool.js"></script>
+</html>

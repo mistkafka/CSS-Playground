@@ -1,0 +1,9 @@
+.flex-container {
+    width: 33.33%;
+    flex-wrap: wrap;
+    align-content: space-between;
+}
+
+.flex-item {
+    width: 90px;
+}

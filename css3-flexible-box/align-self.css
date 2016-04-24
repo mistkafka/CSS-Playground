@@ -1,0 +1,9 @@
+.flex-item:first-child {
+    align-self: center;
+}
+.flex-item:nth-child(2) {
+    align-self: flex-end;
+}
+.flex-item:nth-child(3) {
+    align-self: stretch;
+}

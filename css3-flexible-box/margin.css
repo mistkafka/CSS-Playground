@@ -1,0 +1,7 @@
+.flex-item {
+    display: none;
+}
+.flex-item:first-child {
+    display: block;
+    margin: auto;
+}
