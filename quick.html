@@ -2,11 +2,36 @@
 <html>
 <head>
     <style>
+        /* A Simple Selector, they all work*/
+        * {} /* Universal Selector */
+        p {color: #0d8ba1; font-size: 28px;} /* Type Selector */
+        a[href] {color: #4CAF50;} /* Attribute Selector */
+        .my-class-selector {border-radius: 0.25%;} /* Class Selector */
+        #my-id-selector {height: 100px; width: 100px; border: 2px solid red;} /* ID Selector */
+        /*:hover {background-color: navajowhite;} !* Pseudo Class *!*/
 
+        /*A sequence of Simple Selector, it always begin with a type selector or universal selector */
+        *#my-id-selector:hover {background-color: #4CAF50;}         /* ==> *#my-id-selector:hover */
+        *:hover:not(body):not(html) {                               /* ==> *:hover:not(body):not(html), there is four simple selector: *, :hover, :not(body), :not(html)*/
+            background-color: navajowhite;
+        }
+
+        /*A selector, there is three sequence of simple selector, they are separated by '>' and ' '*/
+        #my-id-selector > p span::after {
+            content: '  hehe';
+        }
+
+        /* The selector is no use, because this pseudo-element ::after only allowed append in the last sequence of simple selector, span*/
+        /*#my-id-selector > p::after span {*/
+            /*content: '  haha';*/
+        /*}*/
     </style>
 </head>
 <body>
-
-
+<p> hello, world <a href="#1">A link</a></p>
+<button class="my-class-selector">A Button</button>
+<div id="my-id-selector">
+    <p>Hello, <span>World</span></p>
+</div>
 </body>
 </html>
