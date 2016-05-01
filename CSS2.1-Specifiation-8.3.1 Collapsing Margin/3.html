@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        * {margin: 0; padding: 0;}
+
+        /*html is the root element*/
+        html {
+            margin: 50px 0;
+        }
+        body {
+            padding: 7px;
+            margin: 100px;
+            width: 300px;
+            height: 300px;
+            /*border: 1px solid red;*/
+        }
+        div {
+            margin: 50px;
+            height: 200px;
+            width: 200px;
+            border: 1px solid black;
+        }
+
+        /* The body top border to the page top border is 100px(body margin) + 50px(html margin) == 150px, no collapse*/
+        /* The div top border to the body top is 0px, and its margin have collapse to body's margin. (Need common the body's border first!!) */
+        /* So match rule #3*/
+
+    </style>
+</head>
+<body>
+<div></div>
+</body>
+</html>
