@@ -1,0 +1,31 @@
+/* width > 1200px */
+.box {
+    background-color: green;
+    height: 300px;
+    width: 1200px;
+}
+
+/* width < 1200px and width > 960px */
+@media (max-width: 1200px) {
+    .box {
+        background-color: green;
+        width: 960px;
+    }
+}
+
+/* width < 960px and width > 765px */
+@media (max-width: 960px) {
+    .box {
+        
+        background-color: red;
+        width: 765px;
+    }
+}
+
+/* width < 765px */
+@media (max-width: 765px) {
+    .box {
+        background-color: yellow;
+        width: 300px;
+    }
+}
