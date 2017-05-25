@@ -1,0 +1,6 @@
+@media (min-width: 765px) {
+    .box {
+        background-color: red;
+        width: 765px;
+    }
+}

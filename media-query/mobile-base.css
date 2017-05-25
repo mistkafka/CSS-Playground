@@ -1,0 +1,33 @@
+/* width > 0, mobile start*/
+.box {
+    background-color: yellow;
+    height: 300px;
+    width: 200px;
+}
+
+
+
+/* width > 765px, mobile's will be override and tabpad start */
+@media (min-width: 765px) {
+    .box {
+        background-color: red;
+        width: 765px;
+    }
+}
+
+/* width > 960px, mobile's rules and tabpad's rules will be oeverride, and desktop start*/
+@media (min-width: 960px) {
+    .box {
+        background-color: green;
+        width: 960px
+    }
+}
+
+
+/* width > 1200px, .... and large desktop start */
+@media (min-width: 1200px) {
+    .box {
+        background-color: blue;
+        width: 1200px;
+    }
+}
