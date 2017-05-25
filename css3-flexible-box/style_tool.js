@@ -25,8 +25,8 @@ function noSpecialStyle() {
   });
   
   for (var i = specialStyles.length - 1; i >= 0; i--) {
-    var specialStyles = specialStyles[i];
-    specialStyles.parentNode.removeChild(specialStyles);
+    var specialStyle = specialStyles[i];
+    specialStyle.parentNode.removeChild(specialStyle);
   }
   console.log('Have removed all styles.');
 }

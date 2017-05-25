@@ -1,0 +1,43 @@
+<html>
+<head>
+    <style>
+        * {
+            margin: 0;
+            text-align: center;
+        }
+        body>header, body>footer {
+            background-color: #333;
+            color: white;
+        }
+        main>nav {
+            background-color: #247BA0;
+        }
+        main>aside {
+            background-color: #70C1B3;
+        }
+        main>.content {
+            background-color: #B2DBBF;
+        }
+
+        body > header {
+            /*display: block;*/
+            /*TODO: 非常重要，不要设置width:100%，同时设置left跟right，fixed的元素的宽度就不会溢出了*/
+            position: fixed;
+            top: 0;
+            left: 10px;
+            right: 0;
+        }
+    </style>
+</head>
+<body>
+<header>#Header</header>
+<main>
+    <nav>#Nav</nav>
+    <aside>#Aside</aside>
+    <section class="content">
+        #Content
+    </section>
+</main>
+<footer>#Footer</footer>
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Dynamic</title>
+    <link href="basic-nav.css" rel="stylesheet" type="text/css" />
+    <link href="basic-flex.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<nav>
+<ul>
+    <li><a onclick="noSpecialStyle()">Basic Only</a></li>
+    <li><a onclick="applyStyle('1')">1</a></li>
+    <li><a onclick="applyStyle('2')">2</a></li>
+    <li><a onclick="applyStyle('3')">3</a></li>
+    <li><a onclick="applyStyle('4')">4</a></li>
+    <li><a onclick="applyStyle('5')">5</a></li>
+    <li><a onclick="applyStyle('6')">6</a></li>
+    <li><a onclick="applyStyle('7')">7</a></li>
+    <li><a onclick="applyStyle('8')">8</a></li>
+    <li><a onclick="applyStyle('9')">9</a></li>
+</ul>
+</nav>
+<main>
+
+    <div class="flex-container">
+        <span class="flex-item"></span>
+    </div>
+
+</main>
+</body>
+<script>
+    var styleMap = {
+        1: './css-of-one-item/1',
+        2: './css-of-one-item/2',
+        3: './css-of-one-item/3',
+        4: './css-of-one-item/4',
+        5: './css-of-one-item/5',
+        6: './css-of-one-item/6',
+        7: './css-of-one-item/7',
+        8: './css-of-one-item/8',
+        9: './css-of-one-item/9'
+    }
+</script>
+<script src="style_tool.js"></script>
+</html>

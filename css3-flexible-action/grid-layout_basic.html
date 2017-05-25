@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="zh_CN">
+<head>
+    <meta charset="UTF-8">
+    <title>flexible-网格布局</title>
+    <style>
+        .cell {
+            background-color: #6B319E;
+            color: #FFF630;
+            text-align: center;
+            flex: 1;
+            margin: 1em;
+        }
+        .row {
+            display: flex;
+        }
+
+        .row:nth-child(4) {
+            height: 300px;
+            align-items: stretch;
+        }
+
+        .perfect-content>.cell {
+            background-color: #FFC186;
+            padding: 0 17px;
+            border-right: 1px solid black;
+        }
+        #first {
+            padding-left: 0;
+        }
+        #third {
+            padding-right: 0;
+            border-right: 0;
+        }
+
+
+    </style>
+</head>
+<body>
+<div class="row">
+    <div class="cell">1/2</div>
+    <div class="cell">1/2</div>
+</div>
+
+<div class="row perfect-content">
+    <div class="cell" id="first">1/3</div>
+    <div class="cell" id="second">1/3</div>
+    <div class="cell" id="third">1/3</div>
+</div>
+
+<div class="row">
+    <div class="cell">1/4</div>
+    <div class="cell">1/4</div>
+    <div class="cell">1/4</div>
+    <div class="cell">1/4</div>
+</div>
+
+<div class="row">
+    <div class="cell">1/2</div>
+    <div class="cell">1/2</div>
+</div>
+
+<div class="row">
+    <div class="cell">1/2</div>
+    <div class="cell">auto</div>
+    <div class="cell">auto</div>
+</div>
+
+</body>
+</html>
