@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="zh_CN">
+    <head>
+        <meta charset="UTF-8">
+        <title>圣杯布局</title>
+        <style>
+         * {
+             margin: 0;
+             text-align: center;
+         }
+         header, footer {
+             background-color: #333;
+             color: white;
+         }
+         header {
+             grid-area: header;
+         }
+         footer {
+             grid-area: footer;
+         }
+         nav {
+             background-color: #247BA0;
+             grid-area: nav;
+         }
+         aside {
+             background-color: #70C1B3;
+             grid-area: aside;
+         }
+         main {
+             background-color: #B2DBBF;
+             grid-area: main;
+         }
+         .hg {
+             display: grid;
+             grid-template-areas:
+                 "header"
+                 "nav"
+                 "main"
+                 "aside"
+                 "footer";
+             grid-template-columns: 100%;
+             grid-template-rows:
+                 100px
+             50px
+             1fr
+             50px
+             30px;
+             height: 100vh;
+         }
+         @media (min-width: 768px) {
+             .hg {
+                 grid-template-columns: 200px 1fr 200px;
+                 grid-template-rows:
+                 50px
+                 1fr
+                 50px;
+                 grid-template-areas:
+                     "header header header"
+                     "nav main aside"
+                     "footer footer footer";
+             }
+         }
+
+        </style>
+    </head>
+    <body>
+        <div class="hg">
+            <header>
+                Header
+            </header>
+            <nav>
+                Menu
+            </nav>
+            <main>
+                Main Content
+            </main>
+            <aside>
+                Aside
+            </aside>
+            <footer>
+                Footer
+            </footer>
+        </div>
+    </body>
+</html>
