@@ -5,6 +5,9 @@
             margin: 0;
             text-align: center;
         }
+        :root {
+            --header-height: 2rem;
+        }
         body>header, body>footer {
             background-color: #333;
             color: white;
@@ -24,8 +27,13 @@
             /*TODO: 非常重要，不要设置width:100%，同时设置left跟right，fixed的元素的宽度就不会溢出了*/
             position: fixed;
             top: 0;
-            left: 10px;
+            left: 0;
             right: 0;
+            height: var(--header-height)
+        }
+
+        main {
+            margin-top: var(--header-height)
         }
     </style>
 </head>

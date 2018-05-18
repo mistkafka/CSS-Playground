@@ -1,0 +1,14 @@
+.grid-container {
+    display: grid;
+    grid-template: 100px 100px 100px / 50px 50px;
+}
+
+.one {
+    grid: 1/2;
+    background: red;
+}
+
+.two {
+    grid: 2/1;
+    background: green;
+}
