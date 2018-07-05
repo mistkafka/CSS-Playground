@@ -1,0 +1,43 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.carousel {
+    padding: 15px;
+    margin: 30px auto;
+
+    height: 400px;
+    width: 600px;
+    overflow: hidden;
+
+    position: relative;
+
+    border: 1px solid black;
+
+}
+
+.carousel__gallery {
+    list-style-type: none;
+
+    display: flex;
+    flex-wrap: nowrap;
+    position: absolute;
+
+    transition: left 1s;
+    -webkit-transition: left 1s;
+}
+
+.carousel__gallery__item {
+    flex: 0 0 600px;
+    height: 400px;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.carousel__gallery__item img {
+    max-height: 370px;
+    max-width: 570px;
+}
